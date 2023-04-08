@@ -1,0 +1,27 @@
+#root {
+  max-width: 1280px;
+  max-height: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contain{
+  max-width: 1200px;
+  max-height: 1200px;
+}
+
+@media (prefers-color-scheme: light) {
+  .contain {
+    color: #404d48;
+    background-color: hsla(203, 14%, 36%, 0.144);
+  }
+  a:hover {
+    color: #747bff;
+  }
+  
+}
+
+
+
+
