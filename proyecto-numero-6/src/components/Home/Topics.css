@@ -1,0 +1,38 @@
+.topics{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 7rem 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+.topics__title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 675px;
+}
+
+.topics__content{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .topics__title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        max-width: 430px;
+    }
+
+    .topics__content{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
