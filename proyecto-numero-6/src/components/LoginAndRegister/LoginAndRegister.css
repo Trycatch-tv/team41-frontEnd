@@ -1,0 +1,180 @@
+.Login__container {
+  background: radial-gradient(
+    77.46% 77.46% at 76.45% 57.87%,
+    #20afff 0%,
+    #1b506d 100%
+  );
+}
+.Logins__container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.Logins__container > img {
+  size: 150px;
+}
+/* Login */
+.Form__container {
+  display: flex;
+  flex-direction: column;
+  width: 524px;
+  height: 672px;
+  background: radial-gradient(
+    43.41% 60.3% at 50.1% 50.35%,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  border: 1px solid #000000;
+  backdrop-filter: blur(25px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.Form__container > h2 {
+  color: #ffffff;
+  margin: 42px 0 44px 42px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.Form__form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Form__form-container > form {
+  display: flex;
+  flex-direction: column;
+}
+.Form__form-container > form > label {
+  font-family: "Montserrat";
+  padding-bottom: 12px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.Form__form-container > form > input {
+  border: 3px solid transparent;
+  color: #000;
+  background-color: #ffff;
+  border-radius: 4px;
+  padding: 0 40px 0 10px;
+  transition: 0.2s ease all;
+}
+.Form__form-container > form > input:focus {
+  outline: none;
+  border: 3px solid #20afff !important;
+}
+.Form__form-container > form > p {
+  color: #ff0000;
+  margin-top: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.Form__form-container > button {
+  margin-top: 52px;
+  color: #ffff;
+  font-weight: 800;
+}
+.input__Error {
+  margin-bottom: 24px;
+}
+/* Sing Up */
+.Form__sinUp-container > h2 {
+  margin: 42px 0 18px 42px;
+  padding-bottom: 7px;
+}
+.SinUp__container > form > label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 7px;
+}
+.SinUp__container > form > p {
+  margin-top: 7px;
+}
+.SinUp__container > button {
+  margin: 10px;
+  color: #ffff;
+  font-weight: 800;
+}
+.Form__container > button {
+  padding-top: 30px;
+  background-color: transparent;
+  width: 250px;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  color: #ffff;
+  transition: 0.5s ease all;
+}
+.Form__container > button:hover {
+  color: #20afff;
+}
+.Form__sinUp-container > button {
+  padding: 40px;
+  color: #ffff;
+}
+@media screen and (max-width: 768px) {
+  .Logins__container > img {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 540px) {
+  .Logins__container > img {
+    width: 170px;
+  }
+  .Form__container {
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+  }
+  .Form__container > h2 {
+    margin: 0 0 15px 0;
+  }
+  .Logins__container {
+    flex-direction: column;
+  }
+  .Form__form-container {
+    align-items: unset;
+    width: 330px;
+  }
+  .Form__form-container > form {
+    width: 100%;
+    overflow: hidden;
+  }
+  .Form__form-container > form > input {
+    width: 320px !important;
+  }
+  .SinUp__container > button,
+  .Form__form-container > button {
+    width: 200px !important;
+    margin: 0 auto;
+  }
+  .Form__container > button {
+    padding-top: 10px;
+  }
+}
