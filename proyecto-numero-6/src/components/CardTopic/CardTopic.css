@@ -1,0 +1,33 @@
+.card-topic{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 360px;
+    padding: 1rem;
+}
+
+.card-topic__img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-topic__img{
+    width: 80%;
+}
+
+.card-topic__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.card-topic__description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    
+}

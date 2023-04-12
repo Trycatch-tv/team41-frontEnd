@@ -1,0 +1,79 @@
+
+/*DEFAULT COLOR*/
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    background: var(--button-background);
+    cursor: pointer;
+    transition: all 0.1s linear;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    text-transform:uppercase;
+    color: var(--button-color);
+    width: fit-content;
+}
+
+.button:hover, .button:focus{
+    filter: saturate(200%)
+}
+
+.button--variant-text {
+    color: #000;
+    background-color: transparent;
+    text-decoration-line: underline;
+}
+
+.button--variant-text:hover, .button--variant-text:focus{
+    opacity: 0.8;
+}
+
+.button--variant-circule {
+    border-radius: 1000px;
+    width: 48px;
+    height: 48px;
+}
+
+.button--variant-text:hover, .button--variant-text:focus{
+    opacity: 0.8;
+}
+
+.button--size-sm{
+    padding: 6px 12px;
+}
+
+.button--size-lg{
+    padding: 11px 22px;
+}
+
+
+.button--color-default{
+    --button-color: #ffffff;
+    --button-background: #20AFFF;
+}
+
+/*PRIMARY COLOR*/
+.button--color-primary{
+    --button-color: #ffffff;
+    --button-background: #20AFFF;
+}
+
+/*DANGER COLOR*/
+.button--color-danger{
+    --button-color:#ffffff;
+    --button-background: #D31515;;
+}
+
+.button--variant-fullwidth{
+    width: 100%;
+}
+
+
