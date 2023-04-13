@@ -5,14 +5,14 @@ function Button({ textButton, background_Color, Width, Height, handleSubmit }) {
     <button
       style={{
         backgroundColor: background_Color,
-        width: Width,
-        height: Height,
+        width: Width || "150px",
+        height: Height || "100px",
         border: "none",
         cursor: "pointer",
       }}
       onClick={handleSubmit}
     >
-      {textButton}
+      {textButton ? textButton : "Button"}
     </button>
   );
 }

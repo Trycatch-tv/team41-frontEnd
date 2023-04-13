@@ -2,14 +2,10 @@ import React, { useState } from "react";
 import { Input } from "../Input";
 import {Button} from "../Button2";
 
-function Login() {
+function Login({handleSubmit}) {
   const [usuario, setUsuario] = useState({ field: "", error: false });
   const [correo, setCorreo] = useState({ field: "", error: false });
   const [error, setError] = useState(false);
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setError(!error);
-  };
   return (
     <>
       <h2>Ingresa</h2>

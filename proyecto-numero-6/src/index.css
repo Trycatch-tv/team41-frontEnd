@@ -16,8 +16,8 @@
 }
 body {
   scroll-behavior: smooth;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-y: auto;
+  overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: #20afff #ffffff;
 }

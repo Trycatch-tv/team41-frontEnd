@@ -3,9 +3,14 @@ import { Login } from "./Login.jsx";
 import { FormPersonalData } from "../PersonalData/index.jsx";
 import Logo from "../../assets/Logo.svg";
 import "./LoginAndRegister.css";
+import { useNavigate } from "react-router-dom";
 
 function LoginAndRegister() {
   const [singUp, setSingUp] = useState(false);
+  const navigate = useNavigate();
+  const handleSubmit = () => {
+    navigate("/");
+  };
   return (
     <section>
       <div className="Logins__container">
@@ -23,11 +28,19 @@ function LoginAndRegister() {
                   !singUp ? null : "SinUp__container"
                 }`}
               >
-                <FormPersonalData singUp={singUp} />
+                <FormPersonalData
+                  singUp={singUp}
+                  handleSubmit={handleSubmit}
+                  textButton="INGRESAR"
+                  Width="440px"
+                  Height="30px"
+                  WidthButton="440px"
+                  HeightButton="60px"
+                />
               </div>
             </>
           ) : (
-            <Login />
+            <Login handleSubmit={handleSubmit} />
           )}
           <button onClick={() => setSingUp(!singUp)}>
             {singUp ? "Datos personales" : "Ingresar"}

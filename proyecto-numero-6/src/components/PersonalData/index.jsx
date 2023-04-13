@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { Input } from "../Input";
-import  {Button}  from "../Button2";
+import { Button } from "../Button2";
 
-function FormPersonalData() {
+function FormPersonalData({
+  handleSubmit,
+  textButton,
+  Width,
+  Height,
+  WidthButton,
+  HeightButton,
+}) {
   const [name, setName] = useState({ field: "", error: false });
   const [lastname, setlastname] = useState({ field: "", error: false });
   const [age, setAge] = useState({ field: "", error: false });
@@ -16,8 +23,8 @@ function FormPersonalData() {
           inputName="Nombre"
           inputId="nombre"
           inputPlaceHolder="Nombre"
-          Width="440px"
-          Height="30px"
+          Width={Width}
+          Height={Height}
           estado={name}
           setState={setName}
           errors="Mensaje de error"
@@ -28,8 +35,8 @@ function FormPersonalData() {
           inputName="Apellido"
           inputId="apellido"
           inputPlaceHolder="Apellido"
-          Width="440px"
-          Height="30px"
+          Width={Width}
+          Height={Height}
           estado={lastname}
           setState={setlastname}
           errors="Mensaje de error"
@@ -40,8 +47,8 @@ function FormPersonalData() {
           inputName="Edad"
           inputId="edad"
           inputPlaceHolder="Edad"
-          Width="440px"
-          Height="30px"
+          Width={Width}
+          Height={Height}
           estado={age}
           setState={setAge}
           errors="Mensaje de error"
@@ -52,19 +59,20 @@ function FormPersonalData() {
           inputName="Carrera"
           inputId="carrera"
           inputPlaceHolder="Carrera"
-          Width="440px"
-          Height="30px"
+          Width={Width}
+          Height={Height}
           estado={studies}
           setState={setStudies}
           errors="Mensaje de error"
         />
-      </form>
       <Button
-        textButton="INGRESAR"
+        handleSubmit={handleSubmit}
+        textButton={textButton}
         background_Color="#20AFFF"
-        Width="440px"
-        Height="60px"
+        Width={WidthButton}
+        Height={HeightButton}
       />
+      </form>
     </>
   );
 }

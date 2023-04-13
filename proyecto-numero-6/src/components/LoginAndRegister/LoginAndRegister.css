@@ -116,7 +116,7 @@
 .SinUp__container > form > p {
   margin-top: 7px;
 }
-.SinUp__container > button {
+.SinUp__container > form > button {
   margin: 10px;
   color: #ffff;
   font-weight: 800;
@@ -169,8 +169,8 @@
   .Form__form-container > form > input {
     width: 320px !important;
   }
-  .SinUp__container > button,
-  .Form__form-container > button {
+  .Form__form-container > button,
+  .SinUp__container > form > button {
     width: 200px !important;
     margin: 0 auto;
   }
