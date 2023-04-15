@@ -1,7 +1,10 @@
+import LoginAndRegister from "../components/LoginAndRegister";
+import "../components/LoginAndRegister/LoginAndRegister.css";
+
 export default function Registro() {
   return (
-    <div className="container contain">
-      <h1>Este es el Registro</h1>
+    <div className="Login__container">
+      <LoginAndRegister />
     </div>
   );
 }
