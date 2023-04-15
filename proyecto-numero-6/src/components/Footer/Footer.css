@@ -1,0 +1,13 @@
+.footer__container {
+  width: 100%;
+  height: 353px;
+  background: #092535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .footer__container > img {
+    width: 80%;
+  }
+}
