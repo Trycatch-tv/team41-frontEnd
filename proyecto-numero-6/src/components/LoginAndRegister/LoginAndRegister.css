@@ -95,6 +95,10 @@
   color: #ffff;
   font-weight: 800;
 }
+.SinUp__container > .Form__form-container > form > button {
+  color: #ffff;
+  font-weight: 800;
+}
 .input__Error {
   margin-bottom: 24px;
 }
