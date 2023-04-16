@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout";
-import NavBar from "./components/NavBar";
 import Home from "./views/Home";
 import Cursos from "./views/Cursos";
 import Inscripciones from "./views/Inscripciones";
@@ -11,7 +10,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <NavBar /> */}
         <Layout>
           <Routes>
             <Route path="/" element={<Home />}></Route>
