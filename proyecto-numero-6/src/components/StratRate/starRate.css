@@ -1,0 +1,40 @@
+.star-rating {
+  margin: 10px 0;
+}
+
+.star-rating > label > input {
+  display: none;
+}
+
+.star {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.star:hover,
+.star-filled {
+  color: #ffd700;
+}
+
+.star-filled {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.star-filled::before {
+  content: "\2605";
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  color: #ffd700;
+}
+
+.star-filled:hover::before,
+.star:hover::before {
+  width: 100%;
+}

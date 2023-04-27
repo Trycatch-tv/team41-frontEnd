@@ -1,31 +1,20 @@
-import React, {useEffect, useState} from 'react';
-import './curso.css'
- 
-import CursosList from '../../components/Cursos/CursosList';
+import React from "react";
+import CursosList from "../../components/Cursos/CursosList";
+import { Modal } from "../../components/Modal";
+import { Curseinformation } from "../../components/CourseInformation";
+import { useModal } from "../../hooks/useModal";
+import "../../components/Cursos/cursos.css";
 
 export default function Cursos() {
-  const [cursos,setCursos] = useState([])
-
-  useEffect( () => {
-      const getCursos = ()=>{
-        fetch ('http://localhost:4000/cursos')
-        .then(res=>res.json())
-        .then(res=>setCursos(res))
-      }
-      getCursos()
-  },[])
+  const { modal, toggleModal } = useModal();
   return (
-    <section className="main">
-    <div className="main_container">
-      <div className="main__text-container">
-        <h2 className="main__text">
-          en esta seccion van los cursos.
-        </h2>
-        <div>
-          <CursosList cursos = {cursos}></CursosList>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section className="cursos__Section">
+      <CursosList toggleModal={toggleModal} />
+      {modal && (
+        <Modal modal={modal}>
+          <Curseinformation toggleModal={toggleModal} />
+        </Modal>
+      )}
+    </section>
   );
 }
