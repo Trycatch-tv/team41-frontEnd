@@ -1,5 +1,5 @@
 import React from "react";
-import { StartRate } from "../StratRate";
+import { StartRate } from "../StarRate";
 import Eye from "../../assets/visibility.png";
 import "./Card.css";
 
