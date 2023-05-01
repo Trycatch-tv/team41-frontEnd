@@ -1,5 +1,5 @@
 import React from "react";
-import { StartRate } from "../StratRate";
+import { StartRate } from "../StarRate";
 import { Button } from "../Button2";
 import imgInfo from "../../assets/cursosIMG.png";
 import "./CourseInfo.css";

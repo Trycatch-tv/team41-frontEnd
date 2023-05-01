@@ -1,0 +1,153 @@
+{
+  "shop": [
+    {
+      "id": 1,
+      "address": "Calle Juan Martín",
+      "type": "frutería",
+      "nombre": "Lola Castro Frutas",
+      "latitude": 37.880273,
+      "longitude": -4.792098
+    },
+    {
+      "id": 2,
+      "address": "Calle Pepe Cruz",
+      "type": "supermercado",
+      "nombre": "Ultramarinos Lolo Castro",
+      "latitude": 37.862323,
+      "longitude": -4.77812
+    },
+    {
+      "id": 3,
+      "address": "Avenida de la Cruz",
+      "type": "pescadería",
+      "nombre": "Pescados El Boquerón",
+      "latitude": 37.856273,
+      "longitude": -4.776992
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "manzanas",
+      "shopId": 1
+    },
+    {
+      "id": 2,
+      "name": "peras",
+      "shopId": 1
+    },
+    {
+      "id": 3,
+      "name": "escoba",
+      "shopId": 2
+    },
+    {
+      "id": 4,
+      "name": "detergente",
+      "shopId": 2
+    }
+  ],
+  "cursos":[
+    {
+      "title": "Programacion básica",
+      "description":
+        "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
+      "by": "{Nombre del profesor}",
+      "averageStarts":3,
+      "comentarios":[
+          {
+            "nombreCurso":"XX",
+            "comentario":"mi comentario",
+            "fechaCreacion":"01/05/2023"
+          },
+          {
+            "nombreCurso":"XY",
+            "comentario":"mi comentario",
+            "fechaCreacion":"01/05/2023"
+          },
+          {
+            "nombreCurso":"XZ",
+            "comentario":"mi comentario",
+            "fechaCreacion":"01/05/2023"
+          }
+      ]
+
+    },
+    {
+      "title": "Programacion básica",
+      "description":
+        "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
+      "by": "{Nombre del profesor}"
+    },
+    {
+      "title": "Programacion básica",
+      "description":
+        "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
+      "by": "{Nombre del profesor}"
+    },
+    {
+      "title": "Programacion básica",
+      "description":
+        "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
+      "by": "{Nombre del profesor}"
+    },
+    {
+      "title": "Programacion básica",
+      "description":
+        "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
+      "by": "{Nombre del profesor}"
+    },
+    {
+      "title": "Programacion básica",
+      "description":
+        "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
+      "by": "{Nombre del profesor}"
+    },
+    {
+      "title": "Programacion básica",
+      "description":
+        "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
+      "by": "{Nombre del profesor}"
+    },
+    {
+      "title": "Programacion básica",
+      "description":
+        "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
+      "by": "{Nombre del profesor}"
+    }
+  ],
+  "Cursos-inscritos":[
+    {
+      "id":"1",
+      "nombre":"Lola ",
+      "apellidos":"Castro Frutas",
+      "fechaNacimiento":"01/01/2000",
+      "edad":23,
+      "misCursos":[
+        {
+          "title": "Programacion básica",
+          "description":
+            "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
+          "by": "{Nombre del profesor}",
+          "selectedStarts":3
+        },
+        {
+          "title": "Programacion básica",
+          "description":
+            "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
+          "by": "{Nombre del profesor}"
+        }
+      ],
+      "misComentarios":[
+        {
+          "nombreCurso":"XX",
+          "comentario":"mi comentario",
+          "fechaCreacion":"01/05/2023"
+        }
+      ]
+
+    }
+    
+  ]
+  
+}

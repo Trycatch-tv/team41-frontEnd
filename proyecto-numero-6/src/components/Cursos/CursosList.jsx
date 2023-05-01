@@ -1,86 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import imgCard from "../../assets/cursosIMG.png";
 import { Card } from "../Card";
 
-const dataCursosFake = [
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-  {
-    title: "Programacion básica",
-    description:
-      "Aprende a crear sitios web impresionantes y domina las últimas tecnologías y herramientas de diseño.",
-    by: "{Nombre del profesor}",
-  },
-];
-
 const cursosList = ({ toggleModal }) => {
-  const [cursos, setCursos] = useState(dataCursosFake);
+  const [cursos, setCursos] = useState();
 
-  /*  useEffect(() => {
+   useEffect(() => {
     const getCursos = () => {
       fetch("http://localhost:4000/cursos")
         .then((res) => res.json())
@@ -88,7 +13,7 @@ const cursosList = ({ toggleModal }) => {
         .then((res) => setCursos(res));
     };
     getCursos();
-  }, []); */
+  }, []); 
   return (
     <>
       <div className="group">
@@ -109,7 +34,7 @@ const cursosList = ({ toggleModal }) => {
         <input placeholder="Buscar Curso" type="search" className="input" />
       </div>
       <div className="cursos__Container">
-        {cursos?.map((cursos, index) => (
+        {cursos && cursos.map((cursos, index) => (
           <Card
             key={index}
             imgSrc={imgCard}
